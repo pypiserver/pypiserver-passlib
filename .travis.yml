@@ -1,0 +1,13 @@
+
+python:
+  - 2.7
+  - 3.4
+  - 3.5
+  - 3.6
+  - pypy
+  - pypy3
+
+environment:
+  - PYPISERVER_REL=pypiserver
+  - PYPISERVER_REL="--pre pypiserver"
+  - PYPISERVER_REL="git+https://github.com/pypiserver/pypiserver"
