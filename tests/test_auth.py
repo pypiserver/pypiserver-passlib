@@ -2,7 +2,7 @@
 
 from argparse import ArgumentParser
 from contextlib import contextmanager
-from os import environ, path, replace
+from os import environ, path, remove
 from shutil import copy2, rmtree
 from tempfile import mkdtemp
 
@@ -32,7 +32,8 @@ def logins(passfile_path, *logins):
         passfile.set_password(uname, password)
     passfile.save()
     yield
-    replace(passbak_path, passfile_path)
+    remove(passfile_path)
+    copy2(passbak_path, passfile_path)
 
 
 @contextmanager
