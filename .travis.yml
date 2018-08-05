@@ -12,10 +12,11 @@ python:
   - pypy
   - pypy3
 
-environment:
-  - PYPISERVER_REL=pypiserver
-  - PYPISERVER_REL="--pre pypiserver"
-  - PYPISERVER_REL="git+https://github.com/pypiserver/pypiserver"
+env:
+  # - PYPISERVER_REL=pypiserver
+  # - PYPISERVER_REL="--pre pypiserver"
+  # - PYPISERVER_REL="git+https://github.com/pypiserver/pypiserver#egg=pypiserver"
+  - PYPISERVER_REL="git+https://github.com/pypiserver/pypiserver@_config_updates#egg=pypiserver"
 
 
 install:
