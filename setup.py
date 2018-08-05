@@ -13,7 +13,7 @@ URL = 'https://github.com/pypiserver/pypiserver-passlib'
 DESCRIPTION = 'A plugin providing passlib auth to pypiserver'
 ENTRY_POINTS = {
     'pypiserver.authenticators': [
-        'passlib = pypiserver_passlib.auth.PasslibAuthenticator',
+        'passlib = pypiserver_passlib.auth:PasslibAuthenticator',
     ]
 }
 EXTRAS = {}
