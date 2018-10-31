@@ -11,7 +11,7 @@ from pypiserver.plugins.authenticators.interface import AuthenticatorInterface
 class PasslibAuthenticator(AuthenticatorInterface):
     """Authenticate using passlib and an htpasswd file."""
 
-    plugin_name = 'Htpasswd Authenticator'
+    plugin_name = 'Passlib Authenticator'
     plugin_help = 'Authenticate using an Apache htpasswd file'
 
     def __init__(self, config):

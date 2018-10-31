@@ -1,4 +1,6 @@
-"""Define version constants for pypiserver."""
+"""Define version constants."""
 
-__version_info__ = (1, 0, 0)
-__version__ = '.'.join(str(i) for i in __version_info__)
+import re
+
+__version__ = '1.0.0'
+__version_info__ = tuple(re.split('[.-]', __version__))
