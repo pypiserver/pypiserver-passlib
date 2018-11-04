@@ -9,7 +9,7 @@ from tempfile import mkdtemp
 import pytest
 from passlib.apache import HtpasswdFile
 
-from pypiserver_passlib.auth import PasslibAuthenticator
+from pypiserver_passlib.authenticator import PasslibAuthenticator
 
 
 @pytest.fixture()
